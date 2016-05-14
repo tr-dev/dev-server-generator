@@ -1,0 +1,23 @@
+{
+  "name": "digitalocean",
+  "version": "0.0.0",
+  "description": "A node app to build digital ocean env",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github:tr-dev/digitalocean.git"
+  },
+  "author": "TR McAlexander",
+  "license": "ISC",
+  "dependencies": {
+    "do-wrapper": "^3.6.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1"
+  }
+}
