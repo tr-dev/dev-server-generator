@@ -1,23 +1,29 @@
 {
-  "name": "digitalocean",
-  "version": "0.0.0",
-  "description": "A node app to build digital ocean env",
+  "name": "dev-server-generator",
+  "version": "0.1.0",
+  "description": "Library to create and provision development server",
   "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "do-wrapper": "^3.11.1",
+    "node-forge": "^0.7.1",
+    "node-uuid": "^1.4.8",
+    "rsa-keygen": "^1.0.6"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github:tr-dev/digitalocean.git"
+    "url": "git+https://github.com/tr-dev/dev-server-generator.git"
   },
-  "author": "TR McAlexander",
+  "author": "tr-dev",
   "license": "ISC",
-  "dependencies": {
-    "do-wrapper": "^3.6.0"
+  "bugs": {
+    "url": "https://github.com/tr-dev/dev-server-generator/issues"
   },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5",
-    "should": "^8.3.1"
-  }
+  "homepage": "https://github.com/tr-dev/dev-server-generator#readme"
 }
