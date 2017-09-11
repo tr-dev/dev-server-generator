@@ -17,12 +17,12 @@ export DO_KEY="mytoken"; node app
 ### Managing SSH Keys
 The `keys` command is an easy way for managing local and remote ssh keys.
 ```
-keys <action> [-lr] [keyname]
+keys <action> [-l -r] [keyname]
 ```
 
 Action | Description
 --- | ---
-`create` | Will create a local ssh key and upload the public key to digital ocean to be used to quickly access droplets
+`create` | Will create a local ssh key and upload the public key to digital ocean to be used to quickly access droplets. If a keyname is not provided, a random string is generated for the name.
 `ls`, `list` | List of the keys avaliable locally (using either `-l`, `--local`) or remotely (using `-r`, `--remote`)
 `rm`, `remove` | Removes an avaliable locally (using either `-l`, `--local`) or remotely (using `-r`, `--remote`). Requires the `key` name to be passed.
 
